@@ -1,0 +1,34 @@
+* {
+  /* Elimina los márgenes por defecto de todos los elementos */
+  margin: 0; /*  quitar separación externa predeterminada */
+  /* Incluye padding y border en los cálculos de ancho/alto */
+  box-sizing: border-box; /*  ancho/alto total incluye padding y borde */
+  /* color del texto de base */
+  color: #ffffff; 
+  /* Familia de fuente base */
+  font-family:
+    "EB Garamond", serif; /* 4) tipografía predeterminada y si no carga una serif */
+}
+
+img {
+  /* Ajusta ancho de imagen al contenedor padre */
+  width: 100%; /*  imagen responsiva en ancho */
+  /* Alineación vertical en línea de texto */
+  vertical-align: middle; /* evita saltos de línea en imágenes inline */
+}
+
+p {
+  /* Margen alrededor del párrafo */
+  margin: 3rem 2rem; 
+  line-height: 1rem; /
+  /* interlineado */
+}
+
+body {
+  background-color: black;
+}
+
+h1,
+h2 {
+    font-family: "EB Garamond", serif;
+}
