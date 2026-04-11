@@ -9,41 +9,48 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+Meroitic&display=swap"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
+    <!-- Maquetación del menu de navegación -->
+    <nav id="menu">
+      <ul>
+        <li>
+          <a href="#luzy2" class="hero">luzydos</a>
+        </li>
+        <li>
+          <a href="#work" class="italic">work</a>
+        </li>
+        <li>
+          <a href="#about.html" class="italic">about</a>
+          <!-- hacer q el about se abra en otra ventana pero no en otra pestaña y que luego al pulsar en el "luzy2" en el header vuleva a la home -->
+        </li>
+      </ul>
+    </nav>
+
+    <!-- maquetación header  -->
     <header>
-      <!-- Maquetación del menu de navegación -->
-      <nav id="menu">
-        <ul>
-          <li>
-            <a href="#luzy2" class="hero">luzydos</a>
-          </li>
-          <li>
-            <a href="#work">work</a>
-          </li>
-          <li>
-            <a href="#about.html">about</a>
-            <!-- hacer q el about se abra en otra ventana pero no en otra pestaña y que luego al pulsar en el "luzy2" en el header vuleva a la home -->
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <h1>
-          Welcome to <span class="my">My</span><br />
-          (graphic design) <span class="portfolio">Portfolio</span>
-        </h1>
-        <!-- "span" es para seleccionar el texto y editarlo después en css. Br es para cambiar de linea. Poner en css "my" y "portfolio" en cursiva -->
-      </section>
+      <h1 class="title-home">
+        <span class="primera-linea">
+          <!-- "welcome" y "to" funcionan como un mismo conjunto pq tienen el mismo aspecto -->
+          <span> Welcome to</span>
+          <span class="title-my">my</span>
+        </span>
+        <span class="segunda-linea"
+          >(graphic design) <span class="title-portfolio">portfolio</span>
+        </span>
+      </h1>
+      <!-- "span" es para seleccionar el texto y editarlo después en css. Poner en css "my" y "portfolio" en cursiva -->
+
       <!-- info de contacto -->
-      <section class="hero footer">
-        <div>
+      <div class="header-contacto">
+        <div class="nombre-correo">
           <p>LUZ DEL CASTILLO ALBERTO</p>
           <p>
             <a href="mailto:luzdelcastilloalberto@gmail.com"
@@ -51,18 +58,19 @@
             >
           </p>
         </div>
-        <div>
+        <div class="luzy2">
           <p>LUZY2</p>
         </div>
-        <div>
+        <div class="behance">
           <p>
             <a href="https://www.behance.net/luzdelcas1">
-              BEHANCE.NET/LUZDELCASTILLO</a
+              BEHANCE.NET/<br />LUZDELCASTILLO</a
             >
           </p>
         </div>
-      </section>
-    </main>
+      </div>
+    </header>
+
     <!-- Marquesina cogida de ejemplo de portfolio -->
     <div class="marquesina">
       <div>
@@ -92,6 +100,8 @@
         <p>branding</p>
       </div>
     </div>
+
+    <!-- seccion de proyectos -->
     <section id="work">
       <h2>Work</h2>
       <div>

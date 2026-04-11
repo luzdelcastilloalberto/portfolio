@@ -1,13 +1,10 @@
 * {
-  /* Elimina los márgenes por defecto de todos los elementos */
   margin: 0; /*  quitar separación externa predeterminada */
   /* Incluye padding y border en los cálculos de ancho/alto */
-  box-sizing: border-box; /*  ancho/alto total incluye padding y borde */
-  /* color del texto de base */
+  box-sizing: border-box;
   color: #ffffff; 
-  /* Familia de fuente base */
   font-family:
-    "EB Garamond", serif; /* 4) tipografía predeterminada y si no carga una serif */
+    "EB Garamond", serif;
 }
 
 img {
@@ -28,7 +25,179 @@ body {
   background-color: black;
 }
 
-h1,
+h1 {
+    font-size: 13vw;
+    font-weight: 900;
+    line-height: 130px;
+}
+
 h2 {
-    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+.italic {
+    font-style: italic;
+}
+
+  /* Marquesina */
+.marquesina {
+  overflow: clip;
+  padding: 4px 0;
+  background-color: white;
+}
+
+.marquesina > div {
+  width: max-content;
+  display: flex;
+  gap: 1rem;
+  padding-left: 3rem;
+  animation: marquesina 30s linear infinite forwards;
+}
+
+.marquesina > div > p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  margin: 15px;
+}
+
+@keyframes marquesina {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* maquetación del menú */
+#menu {
+  /* Posición fija para nav */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+   border-bottom: 1px solid #F5F5F5 ;
+}
+
+#menu > ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  list-style: none;
+  height: 3rem;
+  align-items: center;
+  padding: 0 4rem;
+  gap: 2rem;
+  background-color: rgb(0, 0, 0);
+  
+}
+
+#menu > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+header {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  margin: 45px;
+  
+}
+
+
+.title-home {
+    font-size: 8rem;
+    /* font weight quita la negrita */
+    font-weight: 400;
+    /* ajuste de interlineado e interletrado */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    /* inline-flex para q no ocupe todo el ancho y sea contenedor flexible */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.primera-linea {
+    display: flex;
+    width: 100%;
+ }
+ 
+ .title-my {
+  /* empuja todo hacia la derecha */
+    margin-left: auto; 
+    font-style: italic;
+  }
+
+  .title-portfolio {
+    font-style: italic;
+  }
+
+  .header-contacto {
+     display: flex;
+  padding-top: 60px;
+  gap: 200px;
+  font-family: "Noto Sans", sans-serif !important;
+  }
+
+  .header-contacto * {
+    /* necesita el important porque la fuente base es EB Garamond */
+    font-family: "Noto Sans", sans-serif !important;
+    color: inherit;
+  }
+
+  .header-contacto a {
+    text-decoration: none;
+  }
+
+  .header-contacto > .nombre-correo {
+    display: flex;
+    flex-direction: column;
+    /* interlineado */
+    gap: 0.2rem;
+    padding-top: 43px;
+  }
+
+  .header-contacto > .nombre-correo p {
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  .header-contacto > .luzy2 {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* Marquesina */
+.marquesina {
+  overflow: clip;
+  padding: 0.5rem 0;
+  background-color: white;
+}
+
+.marquesina > div {
+  width: max-content;
+  display: flex;
+  gap: 3rem;
+  padding-left: 3rem;
+  animation: marquesina 30s linear infinite forwards;
+}
+
+.marquesina > div > p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes marquesina {
+  to {
+    transform: translateX(-50%);
+  }
 }
