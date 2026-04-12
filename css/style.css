@@ -41,7 +41,7 @@ h2 {
     font-style: italic;
 }
 
-  /* Marquesina */
+  /* Marquesina...................................................... */
 .marquesina {
   overflow: clip;
   padding: 4px 0;
@@ -70,7 +70,8 @@ h2 {
 }
 
 
-/* maquetación del menú */
+/* maquetación del menú........................................... */
+
 #menu {
   /* Posición fija para nav */
   position: sticky;
@@ -97,6 +98,8 @@ h2 {
   color: white;
   font-size: 1.5em;
 }
+
+/* maquetación header........................................ */
 
 header {
   min-height: 50vh;
@@ -175,29 +178,57 @@ header {
     padding-right: 5px;
   }
 
-  /* Marquesina */
-.marquesina {
-  overflow: clip;
-  padding: 0.5rem 0;
-  background-color: white;
-}
+  /* sección de proyectos........................................ */
 
-.marquesina > div {
-  width: max-content;
+  #work > div {
   display: flex;
-  gap: 3rem;
-  padding-left: 3rem;
-  animation: marquesina 30s linear infinite forwards;
+  flex-wrap: wrap;
+  /* no tocar padding */
+  padding: 6rem 6rem;
+  justify-content: center;
+  row-gap: 2rem;     /* espacio vertical */
+  column-gap: 240px;  /* espacio horizontal */
 }
 
-.marquesina > div > p {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 2rem;
+#work > div > figure {
+  /* 35% para q salgan de 2 en 2 */
+  flex: 0 1 35%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#work > div > figure > figcaption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  text-align: center;
+  background-color:rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+  opacity: 0;
+  transition: 1s;
+  border-radius: 20px;
+  font-style: italic;
+  font-size: 1.5em;
+  text-decoration: underline;
 }
 
-@keyframes marquesina {
-  to {
-    transform: translateX(-50%);
-  }
+#work > div > figure > figcaption:hover {
+  opacity: 1;
 }
+
+#work > h2 {
+  font-size: 3rem;
+  padding-left: 6rem;
+  font-style: italic;
+  padding-top: 6rem;
+}
+
+
+
