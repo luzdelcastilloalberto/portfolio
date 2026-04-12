@@ -44,7 +44,7 @@ h2 {
   /* Marquesina...................................................... */
 .marquesina {
   overflow: clip;
-  padding: 4px 0;
+  padding: 7px 0;
   background-color: white;
 }
 
@@ -58,7 +58,7 @@ h2 {
 
 .marquesina > div > p {
   font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: rgb(0, 0, 0);
   margin: 15px;
 }
@@ -186,13 +186,13 @@ header {
   /* no tocar padding */
   padding: 6rem 6rem;
   justify-content: center;
-  row-gap: 2rem;     /* espacio vertical */
-  column-gap: 240px;  /* espacio horizontal */
+  row-gap: 6rem;     /* espacio vertical */
+  column-gap: 500px;  /* espacio horizontal */
 }
 
 #work > div > figure {
   /* 35% para q salgan de 2 en 2 */
-  flex: 0 1 35%;
+  flex: 0 1 25%;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -230,5 +230,49 @@ header {
   padding-top: 6rem;
 }
 
+/* footer............................................ */
+footer {
+  background-color: rgb(0, 0, 0); /* 77) fondo azul en pie de página */
+  margin-top: auto;
+  height: 180px;
+}
+
+footer > p,
+footer > p > a {
+  color: rgb(255, 255, 255); /* 78) texto y enlaces blancos en footer */
+  padding: auto;
+}
+
+footer i {
+  font-size: 24px;
+  
+}
+
+.footer-contacto i {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
 
 
+.footer-contacto a {
+  text-decoration: none;
+  margin:  10px;
+}
+
+.footer-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 1000px;
+  padding: 5rem;
+}
+
+footer > p {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
