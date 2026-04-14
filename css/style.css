@@ -70,7 +70,7 @@ h2 {
 }
 
 
-/* maquetación del menú........................................... */
+/* maquetación del menú (hacer q al pasar el ratón se hagan más grandes)........................................... */
 
 #menu {
   /* Posición fija para nav */
@@ -97,6 +97,11 @@ h2 {
   text-decoration: none;
   color: white;
   font-size: 1.5em;
+}
+
+#menu > ul > li:hover {
+  transform: scale(1.1);
+  transition: transform 0.7s;
 }
 
 /* maquetación header........................................ */
@@ -152,6 +157,7 @@ header {
     /* necesita el important porque la fuente base es EB Garamond */
     font-family: "Noto Sans", sans-serif !important;
     color: inherit;
+    /* hereda el color marcado en el header */
   }
 
   .header-contacto a {
@@ -232,21 +238,16 @@ header {
 
 /* footer............................................ */
 footer {
-  background-color: rgb(0, 0, 0); /* 77) fondo azul en pie de página */
+  background-color: rgb(0, 0, 0); 
   margin-top: auto;
   height: 180px;
 }
 
 footer > p,
 footer > p > a {
-  color: rgb(255, 255, 255); /* 78) texto y enlaces blancos en footer */
-  padding: auto;
+  color: rgb(255, 255, 255); 
 }
 
-footer i {
-  font-size: 24px;
-  
-}
 
 .footer-contacto i {
   font-size: 40px;
@@ -261,8 +262,7 @@ footer i {
 
 .footer-contacto {
   display: flex;
-  justify-content: center;
-  gap: 1000px;
+  justify-content: space-between;
   padding: 5rem;
 }
 
