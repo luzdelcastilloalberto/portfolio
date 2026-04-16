@@ -311,9 +311,51 @@ footer > p {
     font-size: 1.5em;
   }
 
-  
+  #infoabout {
+  display: flex;
+  justify-content: flex-start;
+}
 
+#infoabout > div {
+  width: 50%;
+  padding: 3rem 3rem;
+  gap: 1rem;
+  margin: 0;
+}
 
+.info > p {
+  font-size: 1.5em;
+  font-family: EB Garamond, serif;
+  line-height: 1.5;
+  padding-top: 200px;
+  font-style: italic;
+  text-align: right;
+  }
+
+  .info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+
+  .carnet {
+   overflow: hidden;
+  width: 100%;
+  max-width: none; /* quitar límite */
+  margin: 0; /* quitar centrado */
+  padding: 10rem;
+}
+
+.carnet img {
+  width: 700px; /* tamaño que tú quieras */
+  display: block;
+}
+
+.carnet img:hover {
+  transform: scale(1.1);
+  transition: transform 0.7s;
+}
 
 
 
