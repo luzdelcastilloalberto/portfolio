@@ -374,11 +374,27 @@ footer > p {
   }
 
   #work > div {
-    display: flex; /* por si acaso */
+    display: flex; 
     flex-direction: column;
     width: 100%;
   }
+
+  .carnet img {
+    width: 100%;
+  }
+
+  #infoabout > div {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .info > p {
+    text-align: left; 
+    padding-top: 0;
+  }
 }
+
+
 
 
 
